@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_63ffaa26a4f24d918ab7ca595dc3dbb9 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_63ffaa26a4f24d918ab7ca595dc3dbb9" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_63ffaa26a4f24d918ab7ca595dc3dbb9 = L.map(
+                                  'map_63ffaa26a4f24d918ab7ca595dc3dbb9',
+                                  {center: [52.36,4.91],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_3cba1d4f20d94f8ebbe9cf919532e027 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_63ffaa26a4f24d918ab7ca595dc3dbb9);
+        
+    
+            var marker_cluster_1318e8475dc540c7a08b7495d9748450 = L.markerClusterGroup({
+                
+            });
+            map_63ffaa26a4f24d918ab7ca595dc3dbb9.addLayer(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+            var marker_cb3bb0fabc764f93b3bcaf2eeab24845 = L.marker(
+                [52.3605759, 4.9159683],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_9546a2a1b7ca4ab1a880af845dca8cdc = L.popup({maxWidth: '300'});
+
+            
+                var html_0b9f77eef305437d90656a2eb40354c3 = $('<div id="html_0b9f77eef305437d90656a2eb40354c3" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Hotel Arena</td>       <td>7.7</td>       <td>1403</td>     </tr>   </tbody> </table></div>')[0];
+                popup_9546a2a1b7ca4ab1a880af845dca8cdc.setContent(html_0b9f77eef305437d90656a2eb40354c3);
+            
+
+            marker_cb3bb0fabc764f93b3bcaf2eeab24845.bindPopup(popup_9546a2a1b7ca4ab1a880af845dca8cdc);
+
+            
+        
+    
+
+            var marker_d1951eb692a34578bf7ff0a199c73ad5 = L.marker(
+                [51.4918878, -0.1949706],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_961f85f24dc7446ab5ae0fcf90b96de3 = L.popup({maxWidth: '300'});
+
+            
+                var html_b88eec0b85954e7b86a528d5fd760ab2 = $('<div id="html_b88eec0b85954e7b86a528d5fd760ab2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>K K Hotel George</td>       <td>8.5</td>       <td>1831</td>     </tr>   </tbody> </table></div>')[0];
+                popup_961f85f24dc7446ab5ae0fcf90b96de3.setContent(html_b88eec0b85954e7b86a528d5fd760ab2);
+            
+
+            marker_d1951eb692a34578bf7ff0a199c73ad5.bindPopup(popup_961f85f24dc7446ab5ae0fcf90b96de3);
+
+            
+        
+    
+
+            var marker_36015bec84394cdaad0ded61f47bb1d2 = L.marker(
+                [51.5137335, -0.1087512],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_7729b625e5ab4daca185b0d6df64a88e = L.AwesomeMarkers.icon({
+                    icon: 'music',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_36015bec84394cdaad0ded61f47bb1d2.setIcon(icon_7729b625e5ab4daca185b0d6df64a88e);
+            
+    
+            var popup_3292b391a8b74268be97136140829936 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c37a02428b841f99aeb0eed6f8853eb = $('<div id="html_2c37a02428b841f99aeb0eed6f8853eb" style="width: 100.0%; height: 100.0%;">Apex Temple Court Hotel</div>')[0];
+                popup_3292b391a8b74268be97136140829936.setContent(html_2c37a02428b841f99aeb0eed6f8853eb);
+            
+
+            marker_36015bec84394cdaad0ded61f47bb1d2.bindPopup(popup_3292b391a8b74268be97136140829936);
+
+            
+        
+    
+
+            var marker_3272fc019c7f4cdba9628bed94755baa = L.marker(
+                [51.5142184, -0.1809032],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_011ec43a992640058dff0dd6af006216 = L.popup({maxWidth: '300'});
+
+            
+                var html_ec7c872999f94192906d0117b4674f32 = $('<div id="html_ec7c872999f94192906d0117b4674f32" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>The Park Grand London Paddington</td>       <td>7.7</td>       <td>4380</td>     </tr>   </tbody> </table></div>')[0];
+                popup_011ec43a992640058dff0dd6af006216.setContent(html_ec7c872999f94192906d0117b4674f32);
+            
+
+            marker_3272fc019c7f4cdba9628bed94755baa.bindPopup(popup_011ec43a992640058dff0dd6af006216);
+
+            
+        
+    
+
+            var marker_7b54573c96ac445f887a720b9ce73b16 = L.marker(
+                [48.8743481, 2.2897334],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_b219513566784d4097cb6660dcdc6cf9 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b54573c96ac445f887a720b9ce73b16.setIcon(icon_b219513566784d4097cb6660dcdc6cf9);
+            
+    
+            var popup_0a89bf14662d4a67807d701a5e1959c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_91fa2e9c5fa946b182f10ada267f7f17 = $('<div id="html_91fa2e9c5fa946b182f10ada267f7f17" style="width: 100.0%; height: 100.0%;">Monhotel Lounge SPA</div>')[0];
+                popup_0a89bf14662d4a67807d701a5e1959c2.setContent(html_91fa2e9c5fa946b182f10ada267f7f17);
+            
+
+            marker_7b54573c96ac445f887a720b9ce73b16.bindPopup(popup_0a89bf14662d4a67807d701a5e1959c2);
+
+            
+        
+    
+
+            var marker_16fc08208106441e99f9e9f851bdc0bc = L.marker(
+                [48.88657, 2.3588332],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_7ff1afdaea914bf8915d09795562c6e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ebfd2ce387440a29d07719f55d1df6d = $('<div id="html_8ebfd2ce387440a29d07719f55d1df6d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Kube Hotel Ice Bar</td>       <td>7.2</td>       <td>197</td>     </tr>   </tbody> </table></div>')[0];
+                popup_7ff1afdaea914bf8915d09795562c6e3.setContent(html_8ebfd2ce387440a29d07719f55d1df6d);
+            
+
+            marker_16fc08208106441e99f9e9f851bdc0bc.bindPopup(popup_7ff1afdaea914bf8915d09795562c6e3);
+
+            
+        
+    
+
+            var marker_c669647689e44b93bf79617b64aa0703 = L.marker(
+                [51.5226217, -0.1251602],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_73b3156fb5b64f649607412445434ea3 = L.AwesomeMarkers.icon({
+                    icon: 'book',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c669647689e44b93bf79617b64aa0703.setIcon(icon_73b3156fb5b64f649607412445434ea3);
+            
+    
+            var popup_6703fcd0b70942dc9b7037e691543791 = L.popup({maxWidth: '300'});
+
+            
+                var html_a96bbe30beb04c15b4196698718e1a5d = $('<div id="html_a96bbe30beb04c15b4196698718e1a5d" style="width: 100.0%; height: 100.0%;">The Principal London</div>')[0];
+                popup_6703fcd0b70942dc9b7037e691543791.setContent(html_a96bbe30beb04c15b4196698718e1a5d);
+            
+
+            marker_c669647689e44b93bf79617b64aa0703.bindPopup(popup_6703fcd0b70942dc9b7037e691543791);
+
+            
+        
+    
+
+            var marker_f5ae5093047c40118fbdf124798425a6 = L.marker(
+                [51.5014001, -0.1160092],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_3a1d49bc3ef744cca7c5e245b0ae26e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_612e7386ad1848af961b19a8fdf4d4eb = $('<div id="html_612e7386ad1848af961b19a8fdf4d4eb" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Park Plaza County Hall London</td>       <td>8.4</td>       <td>6117</td>     </tr>   </tbody> </table></div>')[0];
+                popup_3a1d49bc3ef744cca7c5e245b0ae26e1.setContent(html_612e7386ad1848af961b19a8fdf4d4eb);
+            
+
+            marker_f5ae5093047c40118fbdf124798425a6.bindPopup(popup_3a1d49bc3ef744cca7c5e245b0ae26e1);
+
+            
+        
+    
+
+            var marker_30a7f6b6e35248bb855a790c8a8f8074 = L.marker(
+                [51.5117832, -0.1194172],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_893d184f83814cdc80ed1d0b7f35a0ff = L.popup({maxWidth: '300'});
+
+            
+                var html_ae49b1378581486c91cabd0f7423fb04 = $('<div id="html_ae49b1378581486c91cabd0f7423fb04" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>One Aldwych</td>       <td>9.2</td>       <td>259</td>     </tr>   </tbody> </table></div>')[0];
+                popup_893d184f83814cdc80ed1d0b7f35a0ff.setContent(html_ae49b1378581486c91cabd0f7423fb04);
+            
+
+            marker_30a7f6b6e35248bb855a790c8a8f8074.bindPopup(popup_893d184f83814cdc80ed1d0b7f35a0ff);
+
+            
+        
+    
+
+            var marker_e707e4766e4841a7890177aa9b106ac3 = L.marker(
+                [48.874707, 2.2936761],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_d47f30ea652743fc9c9cd7d7ef914fa1 = L.popup({maxWidth: '300'});
+
+            
+                var html_936a068ed2834a33a7724299b6463fe8 = $('<div id="html_936a068ed2834a33a7724299b6463fe8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Splendid Etoile</td>       <td>8.9</td>       <td>486</td>     </tr>   </tbody> </table></div>')[0];
+                popup_d47f30ea652743fc9c9cd7d7ef914fa1.setContent(html_936a068ed2834a33a7724299b6463fe8);
+            
+
+            marker_e707e4766e4841a7890177aa9b106ac3.bindPopup(popup_d47f30ea652743fc9c9cd7d7ef914fa1);
+
+            
+        
+    
+
+            var marker_3cc8d23128ec4e24898dd939ce4b4e67 = L.marker(
+                [48.8487675, 2.3410376],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_f48e56da44f743a1ae0502dafe2b7331 = L.popup({maxWidth: '300'});
+
+            
+                var html_8cc7547430dd4bb2939c1128a2f2d584 = $('<div id="html_8cc7547430dd4bb2939c1128a2f2d584" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Hotel Trianon Rive Gauche</td>       <td>8.2</td>       <td>967</td>     </tr>   </tbody> </table></div>')[0];
+                popup_f48e56da44f743a1ae0502dafe2b7331.setContent(html_8cc7547430dd4bb2939c1128a2f2d584);
+            
+
+            marker_3cc8d23128ec4e24898dd939ce4b4e67.bindPopup(popup_f48e56da44f743a1ae0502dafe2b7331);
+
+            
+        
+    
+
+            var marker_d8ee3e7ed24645f48d171396c273d493 = L.marker(
+                [51.5038632, -0.1504132],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_c3e1df1ee2024ee18508c7d96db34625 = L.popup({maxWidth: '300'});
+
+            
+                var html_84d62df28d9f4c34a053900d72410f8d = $('<div id="html_84d62df28d9f4c34a053900d72410f8d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>InterContinental London Park Lane</td>       <td>8.5</td>       <td>510</td>     </tr>   </tbody> </table></div>')[0];
+                popup_c3e1df1ee2024ee18508c7d96db34625.setContent(html_84d62df28d9f4c34a053900d72410f8d);
+            
+
+            marker_d8ee3e7ed24645f48d171396c273d493.bindPopup(popup_c3e1df1ee2024ee18508c7d96db34625);
+
+            
+        
+    
+
+            var marker_0af6151a5db444c7826fc17927be6469 = L.marker(
+                [48.9015941, 2.3597783],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_3661bc78f09246b1ac6fe92ab884fe5f = L.popup({maxWidth: '300'});
+
+            
+                var html_bee1cb768e69462d9ca745a2b075fd3e = $('<div id="html_bee1cb768e69462d9ca745a2b075fd3e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Novotel Suites Paris Nord 18 me</td>       <td>7.4</td>       <td>1082</td>     </tr>   </tbody> </table></div>')[0];
+                popup_3661bc78f09246b1ac6fe92ab884fe5f.setContent(html_bee1cb768e69462d9ca745a2b075fd3e);
+            
+
+            marker_0af6151a5db444c7826fc17927be6469.bindPopup(popup_3661bc78f09246b1ac6fe92ab884fe5f);
+
+            
+        
+    
+
+            var marker_c2ed21e6db3441fe814a677a7511ebaf = L.marker(
+                [51.5109945, -0.1863417],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_61de45038fe946eeac2cdcc7114ed915 = L.popup({maxWidth: '300'});
+
+            
+                var html_5cd0079bf5564599b0db504f294303af = $('<div id="html_5cd0079bf5564599b0db504f294303af" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Grand Royale London Hyde Park</td>       <td>7.7</td>       <td>6539</td>     </tr>   </tbody> </table></div>')[0];
+                popup_61de45038fe946eeac2cdcc7114ed915.setContent(html_5cd0079bf5564599b0db504f294303af);
+            
+
+            marker_c2ed21e6db3441fe814a677a7511ebaf.bindPopup(popup_61de45038fe946eeac2cdcc7114ed915);
+
+            
+        
+    
+
+            var marker_27024894f6194ee1b099ff99fc69799c = L.marker(
+                [51.5020425, -0.1866541],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_e90944e6a5724786985496ad204f4adf = L.popup({maxWidth: '300'});
+
+            
+                var html_f6eb9a49d8d44fad8de281d49b871ab4 = $('<div id="html_f6eb9a49d8d44fad8de281d49b871ab4" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Milestone Hotel Kensington</td>       <td>9.5</td>       <td>209</td>     </tr>   </tbody> </table></div>')[0];
+                popup_e90944e6a5724786985496ad204f4adf.setContent(html_f6eb9a49d8d44fad8de281d49b871ab4);
+            
+
+            marker_27024894f6194ee1b099ff99fc69799c.bindPopup(popup_e90944e6a5724786985496ad204f4adf);
+
+            
+        
+    
+
+            var marker_b7cb10368b2d4928ac7e685c710d7d49 = L.marker(
+                [51.5263854, -0.1136042],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_3e22ecee13eb4635baf3e44a63a9cfe2 = L.popup({maxWidth: '300'});
+
+            
+                var html_a7e2729e029e451291e5e2e83f66f88c = $('<div id="html_a7e2729e029e451291e5e2e83f66f88c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Crowne Plaza London Kings Cross</td>       <td>8.1</td>       <td>2312</td>     </tr>   </tbody> </table></div>')[0];
+                popup_3e22ecee13eb4635baf3e44a63a9cfe2.setContent(html_a7e2729e029e451291e5e2e83f66f88c);
+            
+
+            marker_b7cb10368b2d4928ac7e685c710d7d49.bindPopup(popup_3e22ecee13eb4635baf3e44a63a9cfe2);
+
+            
+        
+    
+
+            var marker_cf78ffd9f8f54a69939e9bc41eb9dad4 = L.marker(
+                [48.8483053, 2.3425596],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_2eec7a52583642cf8c187db027966d19 = L.popup({maxWidth: '300'});
+
+            
+                var html_2edffc8c56dc45ce970350fcbdb3faaf = $('<div id="html_2edffc8c56dc45ce970350fcbdb3faaf" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Select Hotel</td>       <td>8.9</td>       <td>1145</td>     </tr>   </tbody> </table></div>')[0];
+                popup_2eec7a52583642cf8c187db027966d19.setContent(html_2edffc8c56dc45ce970350fcbdb3faaf);
+            
+
+            marker_cf78ffd9f8f54a69939e9bc41eb9dad4.bindPopup(popup_2eec7a52583642cf8c187db027966d19);
+
+            
+        
+    
+
+            var marker_0e1a4f212c7b4c77b7d08f2c4ed61e33 = L.marker(
+                [48.8668564, 2.3286339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_b6e32156c69c4803a09d574e77bd2f53 = L.AwesomeMarkers.icon({
+                    icon: 'music',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0e1a4f212c7b4c77b7d08f2c4ed61e33.setIcon(icon_b6e32156c69c4803a09d574e77bd2f53);
+            
+    
+            var popup_94fd040d66dc419b914bbc3625b5c2cb = L.popup({maxWidth: '300'});
+
+            
+                var html_63bd51036c1d450589d2dea1b3616cfe = $('<div id="html_63bd51036c1d450589d2dea1b3616cfe" style="width: 100.0%; height: 100.0%;">H tel De Vend me</div>')[0];
+                popup_94fd040d66dc419b914bbc3625b5c2cb.setContent(html_63bd51036c1d450589d2dea1b3616cfe);
+            
+
+            marker_0e1a4f212c7b4c77b7d08f2c4ed61e33.bindPopup(popup_94fd040d66dc419b914bbc3625b5c2cb);
+
+            
+        
+    
+
+            var marker_bff95dbf200446fe9ecd2672ef75d645 = L.marker(
+                [48.8315204, 2.3870797],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_e9f4e2c0b0624d1fad096b7b9fbecb84 = L.popup({maxWidth: '300'});
+
+            
+                var html_e87dfcacd4364e2bb528653208f3a02c = $('<div id="html_e87dfcacd4364e2bb528653208f3a02c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Pullman Paris Centre Bercy</td>       <td>8.7</td>       <td>1382</td>     </tr>   </tbody> </table></div>')[0];
+                popup_e9f4e2c0b0624d1fad096b7b9fbecb84.setContent(html_e87dfcacd4364e2bb528653208f3a02c);
+            
+
+            marker_bff95dbf200446fe9ecd2672ef75d645.bindPopup(popup_e9f4e2c0b0624d1fad096b7b9fbecb84);
+
+            
+        
+    
+
+            var marker_9eb009e13418456d9c2cb74dfab961cc = L.marker(
+                [48.8610265, 2.3788974],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_ec91100b2ea44cd29d5b50f396cbb4a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed219eaaf4a3496696bc706aca73138e = $('<div id="html_ed219eaaf4a3496696bc706aca73138e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Gardette Park Hotel</td>       <td>8.2</td>       <td>1011</td>     </tr>   </tbody> </table></div>')[0];
+                popup_ec91100b2ea44cd29d5b50f396cbb4a9.setContent(html_ed219eaaf4a3496696bc706aca73138e);
+            
+
+            marker_9eb009e13418456d9c2cb74dfab961cc.bindPopup(popup_ec91100b2ea44cd29d5b50f396cbb4a9);
+
+            
+        
+    
+
+            var marker_8ff10439282e4e6db9f69a000625756c = L.marker(
+                [48.8732543, 2.343239],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_460b40f8d38e442d96b39e8cb56d8d80 = L.popup({maxWidth: '300'});
+
+            
+                var html_d7251cd96e6d4e5588336fc0ff3efab0 = $('<div id="html_d7251cd96e6d4e5588336fc0ff3efab0" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Hotel Panache</td>       <td>8.6</td>       <td>371</td>     </tr>   </tbody> </table></div>')[0];
+                popup_460b40f8d38e442d96b39e8cb56d8d80.setContent(html_d7251cd96e6d4e5588336fc0ff3efab0);
+            
+
+            marker_8ff10439282e4e6db9f69a000625756c.bindPopup(popup_460b40f8d38e442d96b39e8cb56d8d80);
+
+            
+        
+    
+
+            var marker_14e1c424e7304495b874c2a034b68c0a = L.marker(
+                [48.8598229, 2.347111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_c754b21181724fa28265fa1c73b40921 = L.popup({maxWidth: '300'});
+
+            
+                var html_2adb526775f14addb07a53214a45fbd2 = $('<div id="html_2adb526775f14addb07a53214a45fbd2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>H tel des Ducs D Anjou</td>       <td>7.7</td>       <td>552</td>     </tr>   </tbody> </table></div>')[0];
+                popup_c754b21181724fa28265fa1c73b40921.setContent(html_2adb526775f14addb07a53214a45fbd2);
+            
+
+            marker_14e1c424e7304495b874c2a034b68c0a.bindPopup(popup_c754b21181724fa28265fa1c73b40921);
+
+            
+        
+    
+
+            var marker_34dcd23b448c460cbfa5b3f01ae2d4b9 = L.marker(
+                [48.8704175, 2.3296832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_fd8dfdd0912941a28346dbc590cc1c2e = L.popup({maxWidth: '300'});
+
+            
+                var html_92cf203bdafd4b3ca3e7bd89b0d1730c = $('<div id="html_92cf203bdafd4b3ca3e7bd89b0d1730c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Hotel Scribe Paris Opera by Sofitel</td>       <td>8.6</td>       <td>705</td>     </tr>   </tbody> </table></div>')[0];
+                popup_fd8dfdd0912941a28346dbc590cc1c2e.setContent(html_92cf203bdafd4b3ca3e7bd89b0d1730c);
+            
+
+            marker_34dcd23b448c460cbfa5b3f01ae2d4b9.bindPopup(popup_fd8dfdd0912941a28346dbc590cc1c2e);
+
+            
+        
+    
+
+            var marker_c3d24adabc8243639725f43d319820b0 = L.marker(
+                [51.4919588, -0.2200956],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_ed9bccb7065c4440a31a77527af9416d = L.popup({maxWidth: '300'});
+
+            
+                var html_09154ab9cf1d4f6b9b188dc730dd7b4f = $('<div id="html_09154ab9cf1d4f6b9b188dc730dd7b4f" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Novotel London West</td>       <td>8.3</td>       <td>2443</td>     </tr>   </tbody> </table></div>')[0];
+                popup_ed9bccb7065c4440a31a77527af9416d.setContent(html_09154ab9cf1d4f6b9b188dc730dd7b4f);
+            
+
+            marker_c3d24adabc8243639725f43d319820b0.bindPopup(popup_ed9bccb7065c4440a31a77527af9416d);
+
+            
+        
+    
+
+            var marker_b6235e317339434886967d661841d36c = L.marker(
+                [51.5084595, -0.1311382],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_e45a7a4a627349788d2757cc6e5882ff = L.popup({maxWidth: '300'});
+
+            
+                var html_18003ad4d90348318e737b9b77a8b06e = $('<div id="html_18003ad4d90348318e737b9b77a8b06e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Haymarket Hotel</td>       <td>9.6</td>       <td>255</td>     </tr>   </tbody> </table></div>')[0];
+                popup_e45a7a4a627349788d2757cc6e5882ff.setContent(html_18003ad4d90348318e737b9b77a8b06e);
+            
+
+            marker_b6235e317339434886967d661841d36c.bindPopup(popup_e45a7a4a627349788d2757cc6e5882ff);
+
+            
+        
+    
+
+            var marker_e068c62692064a33b6720a643d767a30 = L.marker(
+                [51.5024348, -0.0002497],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_0b898cc4ffa84dd19c91aa2fc9ef4083 = L.popup({maxWidth: '300'});
+
+            
+                var html_92bdd917f2e34da08371cd8fc706ecac = $('<div id="html_92bdd917f2e34da08371cd8fc706ecac" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Intercontinental London The O2</td>       <td>9.4</td>       <td>4204</td>     </tr>   </tbody> </table></div>')[0];
+                popup_0b898cc4ffa84dd19c91aa2fc9ef4083.setContent(html_92bdd917f2e34da08371cd8fc706ecac);
+            
+
+            marker_e068c62692064a33b6720a643d767a30.bindPopup(popup_0b898cc4ffa84dd19c91aa2fc9ef4083);
+
+            
+        
+    
+
+            var marker_f14a420917b74c6f9966897d08d8977c = L.marker(
+                [48.8619373, 2.3040298],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_e192eec90e694c64a1efab08924d591c = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f14a420917b74c6f9966897d08d8977c.setIcon(icon_e192eec90e694c64a1efab08924d591c);
+            
+    
+            var popup_9b73afc708d74d199a12f6e5719991ec = L.popup({maxWidth: '300'});
+
+            
+                var html_523c0164887d458884bf18e981ec6e97 = $('<div id="html_523c0164887d458884bf18e981ec6e97" style="width: 100.0%; height: 100.0%;">H tel Juliana Paris</div>')[0];
+                popup_9b73afc708d74d199a12f6e5719991ec.setContent(html_523c0164887d458884bf18e981ec6e97);
+            
+
+            marker_f14a420917b74c6f9966897d08d8977c.bindPopup(popup_9b73afc708d74d199a12f6e5719991ec);
+
+            
+        
+    
+
+            var marker_5154b35767e44eb7b7749037df083a62 = L.marker(
+                [48.8524215, 2.3743832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_816a1a30a48c46b79e1fcef21dc47c5b = L.popup({maxWidth: '300'});
+
+            
+                var html_c8b8fb07c58a4a54a8458a7bbbc9001a = $('<div id="html_c8b8fb07c58a4a54a8458a7bbbc9001a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Hotel L Antoine</td>       <td>8.9</td>       <td>796</td>     </tr>   </tbody> </table></div>')[0];
+                popup_816a1a30a48c46b79e1fcef21dc47c5b.setContent(html_c8b8fb07c58a4a54a8458a7bbbc9001a);
+            
+
+            marker_5154b35767e44eb7b7749037df083a62.bindPopup(popup_816a1a30a48c46b79e1fcef21dc47c5b);
+
+            
+        
+    
+
+            var marker_c7514daca3904ba8b68e99da0dcb613b = L.marker(
+                [48.8756435, 2.2938788],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+            var popup_a11b1ff30901447d83dde8537bbb444a = L.popup({maxWidth: '300'});
+
+            
+                var html_cadfc23ae11640ebb68bf5bd2e0cc50e = $('<div id="html_cadfc23ae11640ebb68bf5bd2e0cc50e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>Hotel_Name</th>       <th>Avg_Score</th>       <th>#Reviews</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Belfast</td>       <td>7.7</td>       <td>337</td>     </tr>   </tbody> </table></div>')[0];
+                popup_a11b1ff30901447d83dde8537bbb444a.setContent(html_cadfc23ae11640ebb68bf5bd2e0cc50e);
+            
+
+            marker_c7514daca3904ba8b68e99da0dcb613b.bindPopup(popup_a11b1ff30901447d83dde8537bbb444a);
+
+            
+        
+    
+
+            var marker_f8cca4fdb81b4a3a98f697478a662c03 = L.marker(
+                [48.8637135, 2.2934759],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(marker_cluster_1318e8475dc540c7a08b7495d9748450);
+            
+    
+
+                var icon_5d92f579157741ba933e967fe60009bf = L.AwesomeMarkers.icon({
+                    icon: 'music',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f8cca4fdb81b4a3a98f697478a662c03.setIcon(icon_5d92f579157741ba933e967fe60009bf);
+            
+    
+            var popup_e08cad1707c14d368f727128ef9cc19e = L.popup({maxWidth: '300'});
+
+            
+                var html_ae8c8482ee894e2e93ce4fa772a4ed23 = $('<div id="html_ae8c8482ee894e2e93ce4fa772a4ed23" style="width: 100.0%; height: 100.0%;">Shangri La Hotel Paris</div>')[0];
+                popup_e08cad1707c14d368f727128ef9cc19e.setContent(html_ae8c8482ee894e2e93ce4fa772a4ed23);
+            
+
+            marker_f8cca4fdb81b4a3a98f697478a662c03.bindPopup(popup_e08cad1707c14d368f727128ef9cc19e);
+
+            
+        
+</script>
