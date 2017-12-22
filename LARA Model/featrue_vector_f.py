@@ -17,9 +17,9 @@ def Count(reviews,stopwords):
     for text in texts:
         for token in text:
             frequency[token] += 1
-
     texts = [[token for token in text if frequency[token] > 1] for text in texts]
     return texts,frequency
+
 
 
 #save in dic for hotel:d
@@ -49,13 +49,14 @@ import math
 # criterion k=1,2,3,4,5
 # get high fequency criterion words k_words
 # get corpus
-def k_words(words,bootstraping_words,chi_fre): 
+
+def k_words(words,bootstraping_words,fre): 
     k_words=[]
     frequency=[]
     for a in chi_words:
         if a in bootstraping_words:
             i=index(a)
-            frequency.append(chi_fre(i))
+            frequency.append(fre(i))
             k_words.append(a)
     return k_words,frequency 
     
@@ -78,14 +79,15 @@ def label(texts,k_words):
 def corpus(texts, label):  
     corpusi=[]
     for i in range(4):
-        if label[texts]==i
+        if label[texts]==i:
             for word in texts:
                 corpusi.append(word)
         corpus[i]=corpusi
+     return corpus
 	
 # feature matrix f[i][j]
 def f(frequency,texts,corpus):
-    for i in range(4)：
+    for i in range(4):
         for token in texts:
             f[i][token]=frequency[token]/corpus[i][token]
-	return 
+    return f
